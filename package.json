@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "sass sass/main.scss css/all.css --watch",
-    "build": "sass sass/main.scss css/all.css --use autoprefixer -o"
+    "dev": "sass sass/main.scss css/styles.css --watch --style compressed",
+    "prod": "postcss css/styles.css --use autoprefixer -o css/all.css"
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "dependencies": {
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0",
     "sass": "^1.55.0"
   }
 }
