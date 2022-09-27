@@ -1,0 +1,32 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.infoReductionContainer{
+    position: relative;
+    top: 0;
+    background-color: #c94c08;
+    width: 100%;
+}
+.infoReduction{
+    text-align: center;
+    padding: .2em;
+    color: aliceblue;
+    font-size: max(1.2vw, 10px);
+    margin-bottom: 1%;
+}
+
+.headerContainer_grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerContainer_grid img{
+    width: 11%;
+    height: 6%;
+}
+.headerContainer_grid h1{
+    font-size: max(2vw, 12px);
+    padding-left: .3em;
+}
