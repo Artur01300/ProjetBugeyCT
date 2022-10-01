@@ -26,62 +26,69 @@
     
     <title>Bugey Contrôle Technique</title>
     <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awasome/5.15.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <section class="showcase">
-        <header>
-            <h1 class="heder_title">Bugey Contrôle Technique</h1>
-            <div class="toggle"></div>
-        </header>
+    <header>
+        <!-- <a class="brand" href="#">Donnez-nous votre avis !</a> -->
+        <p class="brand">Votre contrôle technique à partir de 75 €</p>
+        <div class="menu-btn"></div>
 
-        <main>
-            <video poster="img/mainBgImg.jpg" autoplay muted>
-                <source src="bg_video/mainBgVdo.mp4" type="video/mp4">
-                <source src="VIDEO_BG/V_webm.webm" type="video/webm">
-                <source src="VIDEO_BG/V_ogg.ogv" type="video/ogg">
-            </video>
-
-            <div class="overlay"></div>
-
-            <div class="container">
-                <!-- <h2>Never Stop</h2>
-                <h3>Exploring The World</h3> -->
-                <h2>Votre contrôle technique à partir de 75 €.</h2>
-                <div class="btns">
-                    <a href="https://agenda2.securitest.org/rdv/?origine=affilie&c=S001021&_ga=2.181156391.1633900074.1664388489-223221410.1664388489#!/">PRONDR RDV</a>
-                    <a href="https://www.google.com/maps/search/?api=1&query=zi+de+penaye%2C+CHAZEY+BONS%2C++01300+FR&output=classic">S'Y RENDRE</a>
-                </div>
-                </div>
-        </main>
-
-        <label class="menu-button-wrapper" for="">
-            <input type="checkbox" class="menu-button">
-            <div class="icon-wrapper">
-              <label class="hamburger">
-                <!-- <input class="hamburger-input" type="checkbox"> -->
-                <span class="hamburger-line first"></span>
-                <span class="hamburger-line second"></span>
-                <span class="hamburger-line third"></span>
-              </label>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="#">Accueil</a>
+                <a href="#">Actualités</a>
+                <a href="#">Services</a>
             </div>
-            <div class="item-list">
-                <nav>
-                    <ul>
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="#">Actualités</a></li>
-                        <li><a href="#">Services</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </label> 
+        </div>
+    </header>
+    
+    <section class="home">
+        <video class="video-slide" poster="img/mainBgImg.jpg" autoplay muted>
+            <source src="bg_video/mainBgVdo.mp4" type="video/mp4">
+            <source src="VIDEO_BG/V_webm.webm" type="video/webm">
+            <source src="VIDEO_BG/V_ogg.ogv" type="video/ogg">
+        </video>
+        <div class="content">
+            <h1>Bugey Contrôle Technique</h1>
+            <p>Sécuritest contrôle technique automobile Chazey-Bons (BELLEY)</p>
+            <address>
+                ZI de Penaye <span><br> 01300 CHAZEY BONS</span>
+            </address>
+            <div class="contentLink-phone">
 
+                <a href="tel:+479878800" title="Téléphoner">
+                    04 79 87 88 00
+                </a><br><br>
+            </div>
+            <div class="content-links">
+                <a href="https://www.google.com/maps/dir//S%C3%A9curitest+Contr%C3%B4le+Technique+Automobile,+ZA+de,+Rue+de+Penaye,+01300+Chazey-Bons/@45.7778137,5.6891635,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x478b6c6070df3ecf:0xa008fe7cbd8546d8!2m2!1d5.6892041!2d45.7778761!3e0">S'Y RENDRE</a>
+                <a href="https://www.google.com/maps/place/S%C3%A9curitest+Contr%C3%B4le+Technique+Automobile/@45.7778137,5.6891635,17z/data=!4m9!1m2!2m1!1szi+de+penaye,+CHAZEY+BONS,++01300+FR!3m5!1s0x478b6c6070df3ecf:0xa008fe7cbd8546d8!8m2!3d45.7778761!4d5.6892041!15sCiR6aSBkZSBwZW5heWUsIENIQVpFWSBCT05TLCAgMDEzMDAgRlKSARZjYXJfaW5zcGVjdGlvbl9zdGF0aW9u4AEA">Donnez-nous votre avis !</a>
+                <a href="https://agenda2.securitest.org/rdv/?origine=affilie&c=S001021&_ga=2.187012520.1230771266.1664591717-1960276424.1664591717#!/">PRENDRE RDV</a>
+            </div>
+        </div>
+
+        <div class="media-icons">
+            <a href="#"><img src="img/facebook.png" alt=""></a>
+            <a href="#"><img src="img/instagram.png" alt=""></a>
+            <a href="#"><img src="img/twitter.png" alt=""></a>            
+        </div>
 
     </section>
+    
+    <p>heloo </p>
 
-    <section>
-        <p>psfmsdf</p>
-    </section>
+    <script type="text/javascript">
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener('click', ()=>{
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+
+        });
+    </script>
     
 </body>
 </html>
